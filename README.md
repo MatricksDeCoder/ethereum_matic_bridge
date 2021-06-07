@@ -12,12 +12,13 @@ To understand how tokens are mapped to each other visit [Mapped Tokens at Matic 
 $ npm install 
 ```
 
-2. Connect Metamask to Ethereum Goerli testnet network and Polygon Matic Mumbai testnet
-<span><img src="./ImagesReadMe/mumbai.png" alt="configure Polygon Matic Mumbai Testne" width="200"/>
-<img src="./ImagesReadMe/mumbai.png" alt="configure Polygon Matic Mainnet" width="200"/></span>
+2. Connect Metamask Polygon Matic Mumbai testnet by adding custom network if not already done so
+<img src="./ImagesReadMe/mumbai.png" alt="configure Polygon Matic Mumbai Testne" width="200"/>
+Connect to Goerli Test Network by selecting Goerli network from the Networks dropdown in Metamask
 
 
 3. Get DummyERC20 (DERC20) tokens on Goerli testnet from [https://faucet.matic.network/](https://faucet.matic.network/)
+<img src="./ImagesReadMe/derc20.png" alt="configure Polygon Matic Mumbai Testne" width="200"/>
 
 
 
