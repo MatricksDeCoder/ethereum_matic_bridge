@@ -1,9 +1,22 @@
 # Ethereum Matic Bridge
+Move DERC20 tokens Dummy ERC20 tokens from Ethereum Goerli testnet to Polygon Mumbai testnet using POS Bridge
+You will need DERC20 tokens in an account you control(have privat key for) e.g a Metamask account. We will get DERC20 tokens from faucet https://faucet.matic.network/ into a Metamask Account. Copy Metamask address and request DERC20. 
+
+Select Token: POS (ERC20 ). Select Network: Goerli. Click Submit. Copy Token Address. Click Confirm! See image below
+
+<img src="./ImagesReadMe/derc20.png" alt="Request DERC20 Tokens" width="300"/>
+Add DERC20 Asset to your Metamask to view the balance of your DERC20. After a while check your Metamask to see new balance DERC20 Tokens
 
 ### About
+
 Make use of a POS Ethereum-Matic bridge to move tokens between the mapped networks
 Goerli testnet on Ethereum and Mumbai testnet on Polygon Matic Network.
-To understand how tokens are mapped to each other visit [Mapped Tokens at Matic documentation](https://docs.matic.network/docs/develop/network-details/mapped-tokens)
+To move Ethereum you need to connect with Polygon Mainnet , this example will use Goerli to Mumbai and reverse
+To view [Mapped Tokens at Matic documentation](https://docs.matic.network/docs/develop/network-details/mapped-tokens)
+To view [Matic Documentation](https://docs.matic.network/docs/develop/ethereum-matic/pos/using-sdk/erc20)
+
+For information on POS and Plasma deposit and withdrawal timelines, token types etc 
+[Visit Docs](https://docs.matic.network/docs/develop/ethereum-matic/getting-started)
 
 ### Get started
 
@@ -12,16 +25,12 @@ To understand how tokens are mapped to each other visit [Mapped Tokens at Matic 
 $ npm install 
 ```
 
-2. Connect Metamask Polygon Matic Mumbai testnet by adding custom network if not already done so
-<img src="./ImagesReadMe/mumbai.png" alt="configure Polygon Matic Mumbai Testne" width="200"/>
-Connect to Goerli Test Network by selecting Goerli network from the Networks dropdown in Metamask
-
-
-3. Get DummyERC20 (DERC20) tokens on Goerli testnet from [https://faucet.matic.network/](https://faucet.matic.network/)
-<img src="./ImagesReadMe/derc20.png" alt="configure Polygon Matic Mumbai Testne" width="200"/>
-
-
-
-3. Run code
+2. Run code
 ```sh
 $ node index.js
+```
+
+### To do
+
+- Use events to listen for events deposit using bridge
+- Plasma Bridge transfers between chains
